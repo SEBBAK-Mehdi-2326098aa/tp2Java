@@ -2,7 +2,8 @@ public class SLinkedListTest {
 
     public static void main(String[] args) {
         SLinkedList list = new SLinkedList();
-        
+        CircularLinkedList clist = new CircularLinkedList();
+
         Node node1 = new Node("Premier", null);
         Node node2 = new Node("Deuxième", null);
         Node node3 = new Node("Troisième", null);
@@ -28,6 +29,11 @@ public class SLinkedListTest {
         
         list.reverse();
         list.printList();
-        
+
+        clist.append("Premier");
+        clist.append("Deuxième");
+        clist.append("Troisième");
+        System.out.println(clist.countNodes());
+
     }
 }
